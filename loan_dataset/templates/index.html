@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loan Prediction</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            text-align: center;
+            padding: 50px;
+        }
+
+        h2 {
+            color: white;
+        }
+
+        form {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            display: inline-block;
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+        }
+
+        input {
+            padding: 10px;
+            margin: 8px;
+            width: 250px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #4facfe;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #00c6ff;
+        }
+
+        h3 {
+            margin-top: 20px;
+            color: #333;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h2>Loan Prediction System</h2>
+
+    <form action="/predict" method="post">
+        <input type="number" name="Age" placeholder="Age" required><br>
+        <input type="number" name="Income" placeholder="Income" required><br>
+        <input type="number" name="Credit_Score" placeholder="Credit Score" required><br>
+        <input type="number" name="Loan_Amount" placeholder="Loan Amount" required><br>
+        <input type="number" name="Loan_Term" placeholder="Loan Term" required><br>
+        <input type="number" name="Employment_Status" placeholder="Employment (0/1/2)" required><br>
+
+        <input type="submit" value="Predict Loan Status">
+    </form>
+
+    <h3>{{ prediction_text }}</h3>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+# AI-Powered Loan Prediction System
+
+## 📌 Overview
+This project is a Machine Learning-based web application that predicts whether a loan will be approved or not based on user inputs such as age, income, credit score, loan amount, and employment status.
+
+## 🚀 Features
+- User-friendly web interface
+- Real-time loan prediction
+- Machine Learning model integration
+- Flask-based backend
+- Deployed on cloud platform
+
+## 🛠️ Technologies Used
+- Python
+- Flask
+- Scikit-learn
+- Pandas
+- HTML & CSS
+
+## 📊 Input Parameters
+- Age
+- Income
+- Credit Score
+- Loan Amount
+- Loan Term
+- Employment Status
+
+## 🎯 Output
+- Loan Approved / Not Approved
+
+## ⚙️ How It Works
+1. User enters details in the web form
+2. Data is sent to Flask backend
+3. Machine Learning model processes input
+4. Prediction is displayed on the UI
+
+## 🌐 Deployment
+The project is deployed using Render cloud platform.
+
+## 📌 Future Improvements
+- Add user authentication
+- Improve UI with React
+- Add database integration
+- Include more advanced ML models
+
+## 👩‍💻 Author
+Venna Jaya Lakshmi
